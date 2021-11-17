@@ -12,7 +12,7 @@ export default function Navbar() {
   const [visible, setVisible] = useState<boolean>(false)
 
   return (
-    <div tw="fixed left-0 top-0 right-0 bg-dark-400">
+    <div tw="fixed left-0 top-0 right-0 bg-dark-50 z-50">
       <nav tw="bg-dark-50 text-dark-300 w-full px-4 top-0 py-7 flex justify-between text-lg  max-w-screen-xl m-auto">
         <div tw="flex space-x-6 items-center">
           <IoMailOutline tw="fill-current text-dark-400 w-6 h-6" />
