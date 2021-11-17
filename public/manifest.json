@@ -15,9 +15,9 @@
       "purpose": "any maskable"
     }
   ],
-  "background_color": "#06092B",
+  "background_color": "#25272E",
   "description": "Um portfólio simples, para desenvolvedores simples.",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#06092B"
+  "theme_color": "#25272E"
 }
