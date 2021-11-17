@@ -26,6 +26,7 @@ export default function Navbar() {
           <S.List visible={!visible}>
             <S.Item>
               <Link href="#">Blog</Link>
+              <Link href="#">Sobre</Link>
             </S.Item>
             <IoClose
               tw="fill-current text-dark-400 cursor-pointer sm:hidden absolute top-0 right-3 w-8 h-8"

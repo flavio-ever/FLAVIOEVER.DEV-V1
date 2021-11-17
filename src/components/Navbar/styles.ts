@@ -21,5 +21,6 @@ export const List = styled.ul<List>(({ visible }) => [
 ])
 
 export const Item = styled.li(() => [
-  tw`hover:text-dark-400 transition-colors duration-200`
+  tw`flex flex-col`,
+  tw`text-center space-y-2 hover:text-dark-400 transition-colors duration-200`
 ])
