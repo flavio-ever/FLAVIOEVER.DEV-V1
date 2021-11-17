@@ -19,5 +19,6 @@
   "description": "Um portfólio simples, para desenvolvedores simples...",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#1B1C1F"
+  "theme_color": "#1B1C1F",
+  "orientation": "portrait"
 }

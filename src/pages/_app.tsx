@@ -14,6 +14,16 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#06092b" />
         <meta name="description" content="Portfolio e Blog" />
 
+        {/* Chrome, Firefox OS and Opera */}
+        <meta name="theme-color" content="#1B1C1F" />
+
+        {/* ios */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
