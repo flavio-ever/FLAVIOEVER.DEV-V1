@@ -1,6 +1,6 @@
 {
   "name": "Flavio Ever",
-  "short_name": "Flavio Ever",
+  "short_name": "Flavio Ever App",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -15,9 +15,9 @@
       "purpose": "any maskable"
     }
   ],
-  "background_color": "#25272E",
-  "description": "Um portfólio simples, para desenvolvedores simples.",
+  "background_color": "#1B1C1F",
+  "description": "Um portfólio simples, para desenvolvedores simples...",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#25272E"
+  "theme_color": "#1B1C1F"
 }
