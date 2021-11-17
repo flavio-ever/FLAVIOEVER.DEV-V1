@@ -26,6 +26,8 @@ export default function Navbar() {
           <S.List visible={!visible}>
             <S.Item>
               <Link href="#">Blog</Link>
+            </S.Item>
+            <S.Item>
               <Link href="#">Sobre</Link>
             </S.Item>
             <IoClose
