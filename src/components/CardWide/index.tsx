@@ -8,11 +8,9 @@ type CardBlog = {
   src: string
   link: string
   title: string
-  date: string
-  tags: string
 }
 
-export default function CardBlog({ src, link, title, date, tags }: CardBlog) {
+export default function CardWide({ src, link, title }: CardBlog) {
   return (
     <S.Container>
       <S.WrapperImage>

@@ -5,7 +5,7 @@ import 'twin.macro'
 import Navbar from 'components/Navbar'
 import Me from 'components/Me'
 import Card from 'components/Card'
-import CardBlog from 'components/CardBlog'
+import CardWide from 'components/CardWide'
 
 export default function HomeTemplate() {
   return (
@@ -71,33 +71,25 @@ export default function HomeTemplate() {
         <div tw="flex flex-col space-y-5 flex-1">
           <h1 tw="text-2xl">Projetinhos em destaque</h1>
           <div tw="flex flex-col">
-            <CardBlog
+            <CardWide
               src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
               link="#"
               title="Arrow functions, pra que servem? Como se alimentam?"
-              date="22/10/2021"
-              tags="Javascript, Pattern"
             />
-            <CardBlog
+            <CardWide
               src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
               link="#"
               title="Arrow functions, pra que servem? Como se alimentam?"
-              date="22/10/2021"
-              tags="Javascript, Pattern"
             />
-            <CardBlog
+            <CardWide
               src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
               link="#"
               title="Arrow functions, pra que servem? Como se alimentam?"
-              date="22/10/2021"
-              tags="Javascript, Pattern"
             />
-            <CardBlog
+            <CardWide
               src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
               link="#"
               title="Arrow functions, pra que servem? Como se alimentam?"
-              date="22/10/2021"
-              tags="Javascript, Pattern"
             />
           </div>
         </div>

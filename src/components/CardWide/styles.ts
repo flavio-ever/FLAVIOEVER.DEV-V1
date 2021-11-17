@@ -17,7 +17,7 @@ export const Container = styled.div(
 )
 
 export const WrapperImage = styled.div(() => [
-  tw`w-56 overflow-hidden rounded-xl shadow-md`
+  tw`w-full h-full sm:w-60 overflow-hidden rounded-xl shadow-md`
 ])
 
 export const WrapperInfo = styled.div(() => [tw`ml-6 space-y-4`])
