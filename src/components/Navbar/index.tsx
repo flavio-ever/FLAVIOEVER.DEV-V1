@@ -23,15 +23,6 @@ export default function Navbar() {
             tw="fill-current text-dark-400 cursor-pointer sm:hidden w-6 h-6"
             onClick={() => setVisible(!visible)}
           />
-          <S.List visible={!visible}>
-            <S.Item>
-              <Link href="#">Blog</Link>
-            </S.Item>
-            <IoClose
-              tw="fill-current text-dark-400 cursor-pointer sm:hidden absolute top-0 right-3 w-8 h-8"
-              onClick={() => setVisible(!visible)}
-            />
-          </S.List>
         </nav>
       </div>
     </>
