@@ -14,7 +14,7 @@ export default function HomeTemplate() {
       <Navbar />
 
       {/* About */}
-      <div tw="flex flex-col p-5 pt-20">
+      <div tw="flex flex-col p-5 pt-24">
         <div tw="flex text-7xl text-purple-50">
           <p tw="font-Montserrat">{`{`}</p>
         </div>
