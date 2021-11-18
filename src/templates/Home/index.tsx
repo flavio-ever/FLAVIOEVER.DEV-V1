@@ -8,7 +8,7 @@ import Card from 'components/Card'
 import CardWide from 'components/CardWide'
 
 const Teste = styled.div(() => [
-  `width: 100vw; height: 200px; position: fixed; z-index: 9999999; top: -20px; background: red;`
+  `width: 100vw; height: 200px; position: fixed; z-index: 9999999; top: -100px; background: red;`
 ])
 
 export default function HomeTemplate() {
