@@ -16,7 +16,7 @@ const CustomStyles = createGlobalStyle`
   body {
     ${tw`antialiased`};
 
-    background-color: var(--dark-1);
+    background-color: var(--dark-0);
   }
 `
 
