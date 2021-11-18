@@ -8,7 +8,7 @@ import Card from 'components/Card'
 import CardWide from 'components/CardWide'
 
 const AppleBar = styled.div(() => [
-  `width: 100vw; height: 100px; position: fixed; z-index: 9999999; top: -100px; background: #1B1C1F;`
+  `width: 100vw; height: 100px; position: fixed; z-index: 99; top: -100px; background: #1B1C1F;`
 ])
 
 export default function HomeTemplate() {

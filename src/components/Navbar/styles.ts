@@ -8,7 +8,7 @@ export const List = styled.ul<List>(({ visible }) => [
   tw`bg-dark-50`,
   tw`flex flex-col sm:flex-row justify-center items-center`,
   tw`min-h-screen sm:min-h-0`,
-  tw`fixed top-0 right-0 left-0 sm:relative`,
+  tw`fixed top-0 right-0 left-0 sm:static`,
   tw`space-y-6 sm:flex sm:space-y-0 sm:space-x-4`,
   tw`transition-all duration-500 sm:transition-none`,
 
