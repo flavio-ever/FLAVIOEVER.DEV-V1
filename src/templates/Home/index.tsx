@@ -4,8 +4,8 @@ import { styled } from 'twin.macro'
 // Components
 import Navbar from 'components/Navbar'
 import Me from 'components/Me'
-import Card from 'components/Card'
-import CardWide from 'components/CardWide'
+import Card from 'components/SmallCard'
+import BigCard from 'components/BigCard'
 
 const AppleBar = styled.div(() => [
   `width: 100vw; height: 100px; position: fixed; z-index: 99; top: -100px; background: #1B1C1F;`
@@ -80,22 +80,22 @@ export default function HomeTemplate() {
             <div tw="flex flex-col space-y-5 flex-1">
               <h1 tw="text-2xl">Projetinhos em destaque</h1>
               <div tw="flex flex-col">
-                <CardWide
+                <BigCard
                   src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
                   link="#"
                   title="Arrow functions, pra que servem? Como se alimentam?"
                 />
-                <CardWide
+                <BigCard
                   src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
                   link="#"
                   title="Arrow functions, pra que servem? Como se alimentam?"
                 />
-                <CardWide
+                <BigCard
                   src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
                   link="#"
                   title="Arrow functions, pra que servem? Como se alimentam?"
                 />
-                <CardWide
+                <BigCard
                   src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
                   link="#"
                   title="Arrow functions, pra que servem? Como se alimentam?"

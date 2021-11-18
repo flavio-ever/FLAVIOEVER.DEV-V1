@@ -1,13 +1,13 @@
 import tw, { styled } from 'twin.macro'
 
 export const Container = styled.div(() => [
-  tw`flex flex-col overflow-hidden bg-dark-200 rounded-xl shadow-md`
+  tw`flex flex-col overflow-hidden bg-dark-200 rounded-xl shadow-md cursor-pointer`
 ])
 
 export const WrapperImage = styled.div(() => [tw`w-full`])
 
 export const Title = styled.h1(() => [
-  tw`text-lg leading-tight font-medium text-dark-400 hover:underline`
+  tw`text-lg leading-tight font-medium text-dark-400`
 ])
 
 export const WrapperInfo = styled.div(() => [tw`p-5`])

@@ -1,7 +1,7 @@
 import tw, { css, styled, theme } from 'twin.macro'
 
 export const Container = styled.div(
-  () => [tw`flex flex-row`],
+  () => [tw`flex flex-row cursor-pointer`],
   css`
     & {
       padding-bottom: 1.5rem;
@@ -23,7 +23,7 @@ export const WrapperImage = styled.div(() => [
 export const WrapperInfo = styled.div(() => [tw`ml-6 space-y-4`])
 
 export const Title = styled.h1(() => [
-  tw`text-lg leading-tight font-medium text-dark-400 hover:underline`
+  tw`text-lg leading-tight font-medium text-dark-400`
 ])
 
 export const Description = styled.p(() => [
