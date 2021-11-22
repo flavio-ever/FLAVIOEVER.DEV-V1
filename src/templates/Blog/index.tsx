@@ -3,15 +3,26 @@ import { styled, theme } from 'twin.macro'
 
 // Components
 import Navbar from 'components/Navbar'
-import Me from 'components/Me'
-
 import SmallCard from 'components/SmallCard'
+import Me from 'components/Me'
 
 const AppleBar = styled.div(() => [
   `width: 100vw; height: 100px; position: fixed; z-index: 99; top: -100px; background: #1B1C1F;`
 ])
 
-export default function BlogTemplate() {
+export type PostTemplateProps = {
+  posts: {
+    title: string
+    slug: string
+    src: string
+    prevDescription: {
+      html: string
+      text: string
+    }
+  }[]
+}
+
+export default function BlogTemplate({ posts }: PostTemplateProps) {
   return (
     <>
       {/* Fix Notch Apple */}
@@ -50,42 +61,16 @@ export default function BlogTemplate() {
             <div tw="flex flex-col space-y-5 flex-1">
               <h1 tw="text-2xl">Postagens recentes</h1>
               <div tw="flex flex-col">
-                <SmallCard
-                  src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
-                  link="#"
-                  hover={theme`colors.carmesim.50`}
-                  title="Arrow functions, pra que servem? Como se alimentam?"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea libero
-                  natus blanditiis sint nam neque atque architecto quis illo dolorem
-                  officia nulla aliquid corporis."
-                />
-                <SmallCard
-                  src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
-                  link="#"
-                  hover={theme`colors.carmesim.50`}
-                  title="Arrow functions, pra que servem? Como se alimentam?"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea libero
-                  natus blanditiis sint nam neque atque architecto quis illo dolorem
-                  officia nulla aliquid corporis."
-                />
-                <SmallCard
-                  src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
-                  link="#"
-                  hover={theme`colors.carmesim.50`}
-                  title="Arrow functions, pra que servem? Como se alimentam?"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea libero
-                  natus blanditiis sint nam neque atque architecto quis illo dolorem
-                  officia nulla aliquid corporis."
-                />
-                <SmallCard
-                  src="https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg"
-                  link="#"
-                  hover={theme`colors.carmesim.50`}
-                  title="Arrow functions, pra que servem? Como se alimentam?"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea libero
-                  natus blanditiis sint nam neque atque architecto quis illo dolorem
-                  officia nulla aliquid corporis."
-                />
+                {posts.map((post, index: number) => (
+                  <SmallCard
+                    key={`post-${index}`}
+                    src={post.src}
+                    link={`blog/${post.slug}`}
+                    hover={theme`colors.carmesim.50`}
+                    title={post.title}
+                    description={post.prevDescription.html}
+                  />
+                ))}
               </div>
             </div>
           </div>

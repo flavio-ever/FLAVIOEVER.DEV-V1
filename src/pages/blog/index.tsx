@@ -1,30 +1,27 @@
-import Link from 'next/link'
 import BlogTemplate from '../../templates/Blog'
 
 function Blog() {
-  return <BlogTemplate />
+  const posts = [
+    {
+      title: 'Olá, mundo!',
+      slug: 'ola-mundo',
+      src: 'https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg',
+      prevDescription: {
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        html: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+      }
+    },
+    {
+      title: 'Olá, mundo 2!',
+      slug: 'ola-mundo-2',
+      src: 'https://media.sketchfab.com/models/2421eadea6164f19b22451e5abf0578d/thumbnails/fd95d8c5ab134b7caaba6cbc7f53744a/9954fbdeffff46e087b5e78c1c86fcd0.jpeg',
+      prevDescription: {
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        html: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+      }
+    }
+  ]
+
+  return <BlogTemplate posts={posts} />
 }
-
-// function Posts() {
-//   return (
-//     <ul>
-//       {[
-//         { id: '123', title: 'Olá, mundo!', slug: 'ola-mundo' },
-//         { id: '1234', title: 'Olá, mundo 2!', slug: 'ola-mundo-2' }
-//       ].map((post: any) => (
-//         <li key={post.id}>
-//           <Link
-//             href={{
-//               pathname: 'blog/[slug]',
-//               query: { slug: post.slug }
-//             }}
-//           >
-//             <a>{post.title}</a>
-//           </Link>
-//         </li>
-//       ))}
-//     </ul>
-//   )
-// }
-
 export default Blog
