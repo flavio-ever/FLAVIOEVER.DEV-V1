@@ -30,9 +30,8 @@ export default function HomeTemplate() {
               <div tw="flex flex-col text-center sm:text-left space-y-4 md:mr-6">
                 <h1 tw="text-purple-50 text-5xl">{`<OlaMundo/>`}</h1>
                 <p tw="px-4 sm:px-0">
-                  <br /> Bem vindo(a) ao meu portfólio/Blog
-                  <br /> Nodezeiro 🚀 na semana e Player casual 🎮 nas horas
-                  vagas :P
+                  Bem vindo(a) ao meu portfólio/Blog. Nodezeiro 🚀 na semana e
+                  Player casual 🎮 nas horas vagas :P
                 </p>
               </div>
               <div tw="mb-5">
