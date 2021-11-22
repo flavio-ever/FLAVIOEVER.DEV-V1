@@ -1,35 +1,34 @@
 import tw, { styled, css } from 'twin.macro'
 
 type Wrap = {
-  bgColor?: string
+  color?: string
 }
 
 type Me = {
-  bgImg: string
+  img: string
+  width?: number
+  height?: number
 }
 
 export interface IMe extends Me, Wrap {}
 
-export const Wrap = styled.div<Wrap>(({ bgColor }) => [
+export const Wrap = styled.div<Wrap>(({ color }) => [
   tw`rounded-full flex items-center justify-center`,
 
   css`
-    background-color: ${bgColor};
+    background-color: ${color};
 
     width: 15.31rem;
     height: 15.31rem;
   `
 ])
 
-export const Me = styled.div<Me>`
-  ${(props: any) =>
-    props.bgImg &&
-    css`
-      background-image: url(${props.bgImg});
-    `}
+export const Me = styled.div<Me>(({ img, width = 167, height = 167 }) => [
+  tw`flex bg-no-repeat bg-left-top`,
 
-  ${tw`flex bg-no-repeat bg-left-top`}
-
-  width: 167px;
-  height: 167px;
-`
+  css`
+    width: ${width + `px`};
+    height: ${height + `px`};
+    background-image: url(${img});
+  `
+])

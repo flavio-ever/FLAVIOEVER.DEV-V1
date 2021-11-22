@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div tw="fixed left-0 top-0 right-0 bg-dark-50 z-50">
+      <header tw="fixed left-0 top-0 right-0 bg-dark-50 z-50">
         <nav tw="w-full px-4 top-0 py-7 flex justify-between text-lg max-w-screen-xl m-auto">
           <div tw="flex space-x-6 items-center">
             <IoMailOutline tw="fill-current text-dark-400 w-6 h-6" />
@@ -25,7 +25,10 @@ export default function Navbar() {
           />
           <S.List visible={!visible}>
             <S.Item>
-              <Link href="#">Blog</Link>
+              <Link href="/">Home</Link>
+            </S.Item>
+            <S.Item>
+              <Link href="/blog">Blog</Link>
             </S.Item>
             <S.Item>
               <Link href="#">Sobre</Link>
@@ -36,7 +39,7 @@ export default function Navbar() {
             />
           </S.List>
         </nav>
-      </div>
+      </header>
     </>
   )
 }

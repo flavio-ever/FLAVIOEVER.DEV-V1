@@ -44,6 +44,9 @@ module.exports = {
       },
       yellow: {
         50: '#FFD600'
+      },
+      carmesim: {
+        50: '#FF005C'
       }
     },
     extend: {
@@ -60,6 +63,9 @@ module.exports = {
         },
         yellow: {
           50: '#FFD600'
+        },
+        carmesim: {
+          50: '#FF005C'
         }
       },
       backgroundImage: {}

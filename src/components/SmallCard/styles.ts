@@ -32,7 +32,7 @@ export const WrapperImage = styled.div(() => [
 export const WrapperInfo = styled.div(() => [tw`ml-6 space-y-4`])
 
 export const Title = styled.h1(() => [
-  tw`text-lg leading-tight font-medium text-dark-400 transition-colors`
+  tw`text-lg leading-tight font-medium text-dark-400`
 ])
 
 export const Description = styled.p(() => [
