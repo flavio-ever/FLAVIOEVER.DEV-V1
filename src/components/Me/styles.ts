@@ -13,13 +13,9 @@ export interface IMe extends Me, Wrap {}
 export const Wrap = styled.div<Wrap>(({ bgColor }) => [
   tw`rounded-full flex items-center justify-center`,
 
-  bgColor
-    ? css`
-        background-color: ${bgColor};
-      `
-    : tw`bg-purple-50`,
-
   css`
+    background-color: ${bgColor};
+
     width: 15.31rem;
     height: 15.31rem;
   `

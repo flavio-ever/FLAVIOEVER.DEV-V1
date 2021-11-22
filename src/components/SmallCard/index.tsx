@@ -4,36 +4,39 @@ import Link from 'next/link'
 
 import * as S from './styles'
 
-type Card = {
+type CardBlog = {
   src: string
   link: string
   title: string
-  date: string
-  tags: string
+  description: string
+  hover: string
 }
 
-export default function SmallCard({ src, link, title, date, tags }: Card) {
+export default function SmallCard({
+  src,
+  link,
+  title,
+  description,
+  hover
+}: CardBlog) {
   return (
     <Link href={link}>
-      <S.Container>
+      <S.Container hover={hover}>
         <S.WrapperImage>
           <Image
             layout="responsive"
-            height={50}
+            height={100}
             width={100}
             objectFit="cover"
             quality={100}
-            key={`photo-1`}
             src={src}
-            alt="descricao"
+            key={title}
+            alt={title}
           />
         </S.WrapperImage>
         <S.WrapperInfo>
           <S.Title>{title}</S.Title>
-          <S.WrapperSub>
-            <S.Date>{date}</S.Date>
-            <S.Tags>{tags}</S.Tags>
-          </S.WrapperSub>
+          <S.Description>{description}</S.Description>
         </S.WrapperInfo>
       </S.Container>
     </Link>

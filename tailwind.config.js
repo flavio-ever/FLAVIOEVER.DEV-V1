@@ -1,9 +1,35 @@
 module.exports = {
   purge: [],
   darkMode: 'class', // or 'media' or 'class'
+  variants: {
+    animation: ['responsive', 'motion-safe', 'motion-reduce'],
+
+    extend: {
+      animation: ['motion-safe']
+    }
+  },
   theme: {
-    fill: {
-      current: 'currentColor'
+    keyframes: {
+      'jump-in-up': {
+        from: {
+          transform: 'translateY(0px)'
+        },
+        to: {
+          transform: 'translateY(-5px)'
+        }
+      },
+      'jump-out-down': {
+        '0%': {
+          transform: 'translateY(-5px)'
+        },
+        '100%': {
+          transform: 'translateY(0)'
+        }
+      }
+    },
+    animation: {
+      'jump-in-up': 'jump-in-up 0.5s ease-out forwards',
+      'jump-out-down': 'jump-out-down 0.2s ease-out'
     },
     textColor: {
       dark: {
@@ -38,13 +64,13 @@ module.exports = {
       },
       backgroundImage: {}
     },
+    fill: {
+      current: 'currentColor'
+    },
     fontFamily: {
       Heebo: ['Heebo', 'system-ui'],
       Montserrat: ['Montserrat', 'system-ui']
     }
-  },
-  variants: {
-    extend: {}
   },
   plugins: []
 }

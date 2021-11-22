@@ -1,31 +1,19 @@
-import tw, { css, styled, theme } from 'twin.macro'
+import tw, { styled } from 'twin.macro'
 
-export const Container = styled.div(
-  () => [tw`flex flex-row cursor-pointer`],
-  css`
-    & {
-      padding-bottom: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-bottom: 1px solid ${theme`colors.dark.200`};
-    }
-
-    &:last-child {
-      padding: 0;
-      border-bottom: none;
-    }
-  `
-)
-
-export const WrapperImage = styled.div(() => [
-  tw`w-full h-full sm:w-60 overflow-hidden rounded-xl shadow-md`
+export const Container = styled.div(() => [
+  tw`flex flex-col overflow-hidden bg-dark-200 rounded-xl shadow-md cursor-pointer hover:animate-jump-in-up animate-jump-out-down`
 ])
 
-export const WrapperInfo = styled.div(() => [tw`ml-6 space-y-4`])
+export const WrapperImage = styled.div(() => [tw`w-full`])
 
 export const Title = styled.h1(() => [
   tw`text-lg leading-tight font-medium text-dark-400`
 ])
 
-export const Description = styled.p(() => [
-  tw`text-sm leading-tight text-dark-300`
-])
+export const WrapperInfo = styled.div(() => [tw`p-5`])
+
+export const WrapperSub = styled.div(() => [tw`flex justify-between mt-5`])
+
+export const Date = styled.p(() => [])
+
+export const Tags = styled.p(() => [tw`truncate`])

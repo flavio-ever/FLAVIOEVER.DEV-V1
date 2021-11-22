@@ -4,35 +4,36 @@ import Link from 'next/link'
 
 import * as S from './styles'
 
-type CardBlog = {
+type Card = {
   src: string
   link: string
   title: string
+  date: string
+  tags: string
 }
 
-export default function BigCard({ src, link, title }: CardBlog) {
+export default function BigCard({ src, link, title, date, tags }: Card) {
   return (
     <Link href={link}>
       <S.Container>
         <S.WrapperImage>
           <Image
             layout="responsive"
-            height={100}
+            height={50}
             width={100}
             objectFit="cover"
             quality={100}
-            key={`photo-1`}
             src={src}
-            alt="descricao"
+            key={title}
+            alt={title}
           />
         </S.WrapperImage>
         <S.WrapperInfo>
           <S.Title>{title}</S.Title>
-          <S.Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea libero
-            natus blanditiis sint nam neque atque architecto quis illo dolorem
-            officia nulla aliquid corporis.
-          </S.Description>
+          <S.WrapperSub>
+            <S.Date>{date}</S.Date>
+            <S.Tags>{tags}</S.Tags>
+          </S.WrapperSub>
         </S.WrapperInfo>
       </S.Container>
     </Link>
